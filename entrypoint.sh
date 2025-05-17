@@ -1,7 +1,6 @@
 #!/bin/bash
 
 echo "🛠 Running database migrations..."
-#python3 /app/manage.py makemigrations
 python3 /app/manage.py migrate
 
 echo "🚀 Starting server..."
