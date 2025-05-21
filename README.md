@@ -18,8 +18,6 @@ This is a Django app that implements a **tree-structured menu system** with supp
 .
 ├── config/                 # Django settings and configuration files (e.g., settings.py, urls.py)
 │
-├── db.sqlite3              # SQLite database file
-│
 ├── .gitignore            
 │
 ├── manage.py             
