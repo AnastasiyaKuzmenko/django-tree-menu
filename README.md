@@ -71,13 +71,17 @@ http://localhost:8000
 ## How to Create Menus and MenuItems
 
 ### 1. Create a superuser
+Make sure your virtual environment is activated.
 Run the following command and follow the prompts to create an admin user:
 ```bash
 python manage.py createsuperuser
 ```
 
 ### 2. Add Menus and MenuItems in the Django admin
-
+- Run the project:
+```bash
+./run_local.sh
+```
 - Open the admin panel at:
 ```bash
  http://localhost:8000/admin/
