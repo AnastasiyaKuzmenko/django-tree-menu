@@ -91,7 +91,7 @@ python manage.py createsuperuser
     - Optionally, select a parent item to create nested menus.
 
 ### 3. Render the menu in template 
-Open file menu/templates/menu.html and change line `{% draw_menu 'test' %}`. Here 'test' should match the name of the menu you created in the admin. 
+Open file `menu/templates/menu.html` and change line `{% draw_menu 'test' %}`. Here 'test' should match the name of the menu you created in the admin. 
 
 ### 4. Open the app in your browser
 ```bash
