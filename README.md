@@ -69,3 +69,7 @@ pip install -r requirements.txt
 chmod +x run_local.sh
 ./run_local.sh
 ```
+### 5. Access the app at
+```bash
+http://localhost:8000
+```
