@@ -5,7 +5,7 @@ This is a Django app that implements a **tree-structured menu system** with supp
 ## Features
 ✅ Menu is rendered via a **custom template tag**.  
 ✅ All menu data is stored in the **database**.  
-✅ Menus are editable via the **Django admin interface**. 
+✅ Menus are editable via the **Django admin interface**.  
 ✅ **Multiple menus** can be rendered on a single page by name.  
 ✅ Each menu item supports a **URL or named URL pattern**.  
 ✅ The menu tree expands automatically to show the **active path**.  
