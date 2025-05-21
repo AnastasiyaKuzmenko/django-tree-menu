@@ -3,14 +3,14 @@
 This is a Django app that implements a **tree-structured menu system** with support for multiple named menus, nesting, active link highlighting, and admin-based editing.
 
 ## Features
-✅ Menu is rendered via a **custom template tag**  
-✅ All menu data is stored in the **database**  
-✅ Menus are editable via the **Django admin interface**  
-✅ **Multiple menus** can be rendered on a single page by name  
-✅ Each menu item supports a **URL or named URL pattern**  
-✅ The menu tree expands automatically to show the **active path**  
-✅ The **active item is highlighted** based on the current page  
-✅ Only **1 database query** is used per menu render 
+✅ Menu is rendered via a **custom template tag**.  
+✅ All menu data is stored in the **database**.  
+✅ Menus are editable via the **Django admin interface**. 
+✅ **Multiple menus** can be rendered on a single page by name.  
+✅ Each menu item supports a **URL or named URL pattern**.  
+✅ The menu tree expands automatically to show the **active path**.  
+✅ The **active item is highlighted** based on the current page.  
+✅ Only **1 database query** is used per menu render. 
 
 
 ## Folder Structure
@@ -82,16 +82,16 @@ python manage.py createsuperuser
 ```bash
  http://localhost:8000/admin/
 ```
-- Create a new Menu with a unique name
+- Create a new Menu with a unique name.
 - Add MenuItems linked to the created menu:
     - Fill in the Name field — this is the label shown in the menu.
     - To specify a link, either:
-        - Use URL (e.g., /about/) for direct links
-        - Or use named_url — the name of a URL pattern defined in your urls.py and views.py
+        - Use URL (e.g., /about/) for direct links.
+        - Or use named_url — the name of a URL pattern defined in your urls.py and views.py.
     - Optionally, select a parent item to create nested menus.
 
 ### 3. Render the menu in template 
-Open file menu/templates/menu.html and change line {% draw_menu 'test' %}. Here 'test' should match the name of the menu you created in the admin. 
+Open file menu/templates/menu.html and change line `{% draw_menu 'test' %}`. Here 'test' should match the name of the menu you created in the admin. 
 
 ### 4. Open the app in your browser
 ```bash
