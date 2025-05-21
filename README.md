@@ -95,26 +95,6 @@ python manage.py createsuperuser
 ### 3. Render the menu in template 
 Open file menu/templates/menu.html and change line {% draw_menu 'test' %}. Here 'test' should match the name of the menu you created in the admin. 
 
-
-### 3.1. (Optional) Add basic view and URL pattern for named URLs
-If you want to use named_url (e.g., about, contact), make sure to define them in your code.
-Example:
-##### menu/views.py
-```bash
-def about(request):
-    return render(request, 'about.html')
-```
-##### urls.py
-```bash
-from menu.views import about
-urlpatterns = [
-    path('about/', about, name='about'),  # named URL: 'about'
-]
-
-```
-
-⚠️ Note: Replace about with your own view and URL name depending on your project. This is just an example.
-
 ### 4. Open the app in your browser
 ```bash
 http://localhost:8000
