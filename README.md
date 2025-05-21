@@ -86,11 +86,11 @@ python manage.py createsuperuser
 ```
 - Create a new Menu with a unique name
 - Add MenuItems linked to the created menu:
-        - Fill in the Name field — this is the label shown in the menu.
-        - To specify a link, either:
-            - Use URL (e.g., /about/) for direct links
-            - Or use named_url — the name of a URL pattern defined in your urls.py and views.py
-        - Optionally, select a parent item to create nested menus.
+    - Fill in the Name field — this is the label shown in the menu.
+    - To specify a link, either:
+        - Use URL (e.g., /about/) for direct links
+        - Or use named_url — the name of a URL pattern defined in your urls.py and views.py
+    - Optionally, select a parent item to create nested menus.
 
 ### 3. Render the menu in template 
 Open file menu/templates/menu.html and change line {% draw_menu 'test' %}. Here 'test' should match the name of the menu you created in the admin. 
