@@ -20,10 +20,6 @@ This is a Django app that implements a **tree-structured menu system** with supp
 │
 ├── db.sqlite3              # SQLite database file
 │
-├── Dockerfile              # Configuration for building the Docker image
-│
-├── entrypoint.sh           # Shell script used as the Docker container entry point
-│
 ├── .gitignore            
 │
 ├── manage.py             
