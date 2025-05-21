@@ -46,9 +46,7 @@ def draw_menu(context, menu_name):
         root_menu_items = items_by_parent.get(None, [])
 
         for item in all_items:
-            print(f"[DEBUG] {item.name} → {item.get_absolute_url()} vs {current_path}")
             if item.get_absolute_url() == current_path:
-                print(f"[MATCH] Active item: {item.name}")
                 active_item = item
                 break
 
