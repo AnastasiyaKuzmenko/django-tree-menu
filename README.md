@@ -16,33 +16,34 @@ This is a Django app that implements a **tree-structured menu system** with supp
 ## Folder Structure
 ```bash
 .
-├── config/               # Django settings and configuration files (e.g., settings.py, urls.py)
+├── config/                 # Django settings and configuration files (e.g., settings.py, urls.py)
 │
-├── db.sqlite3            # SQLite database file
+├── db.sqlite3              # SQLite database file
 │
-├── Dockerfile            # Configuration for building the Docker image
+├── Dockerfile              # Configuration for building the Docker image
 │
-├── entrypoint.sh         # Shell script used as the Docker container entry point
+├── entrypoint.sh           # Shell script used as the Docker container entry point
 │
 ├── .gitignore            
 │
 ├── manage.py             
-├── menu/                 # Django app that implements the tree menu
+├── menu/                   # Django app that implements the tree menu
 │   ├── admin.py          
 │   ├── apps.py           
-│   ├── models.py         # Database models: Menu and MenuItem
+│   ├── models.py           # Database models: Menu and MenuItem
 │   ├── views.py
 │   ├── static/
 │     └── css/   
-│        └── main.css     # Menu styling rules     
-│   ├── templatetags/     # Custom template tags
-│      └── menu_tags.py    # Custom template tag to render the tree menu
-│   └── templates/         # HTML templates used by the app
-│       ├── main.html         # Example base page that renders the menu
-│       ├── menu.html         # Main menu template
-│       └── menu_item.html    # Recursive template for nested menu items
+│        └── main.css       # Menu styling rules     
+│   ├── templatetags/       # Custom template tags
+│      └── menu_tags.py     # Custom template tag to render the tree menu
+│   └── templates/          # HTML templates used by the app
+│       ├── main.html       # Example base page that renders the menu
+│       ├── menu.html       # Main menu template
+│       └── menu_item.html  # Recursive template for nested menu items
 │
-├── requirements.txt      # List of Python dependencies required by the project
+├── requirements.txt        # List of Python dependencies
+├── run_local.sh            # Activates venv, run migrations, and start the development server
 └── README.md       
 
 ```
@@ -54,4 +55,17 @@ This is a Django app that implements a **tree-structured menu system** with supp
 git clone https://github.com/AnastasiyaKuzmenko/django-tree-menu.git
 cd django-tree-menu
 ```
-### 2. 
+### 2. Create and activate a virtual environment
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+### 3. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+### 4. Run the project
+```bash
+chmod +x run_local.sh
+./run_local.sh
+```
