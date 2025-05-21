@@ -1,11 +1,11 @@
 
-{% if menu %}
-  <h2>{{ menu.name }}</h2>
+{% if menu_name %}
+  <h2>{{ menu_name|capfirst }}</h2>
 {% endif %}
 <ul>
-    {% for item in menu_items %}
-        {% include "menu_item.html" with item=item %}
+    {% for item in root_menu_items %}
+        {% include "menu_item.html" with item=item current_path=current_path %}
     {% empty %}
-        <li>Меню пустое</li>
+        <li>The menu is empty</li>
     {% endfor %}
 </ul>
