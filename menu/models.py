@@ -1,8 +1,6 @@
 from django.db import models
 from django.urls import reverse, NoReverseMatch
 
-# Create your models here.
-
 class Menu(models.Model):
     name = models.CharField(max_length=100, unique=True)
 
